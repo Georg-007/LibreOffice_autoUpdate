@@ -1,15 +1,15 @@
 !include "MUI.nsh"
 
-!define MUI_ICON "${INSTALLATIONNAME}.ico"
+!define MUI_ICON "../icon/${INSTALLATIONNAME}.ico"
 !define MUI_HEADERIMAGE
-!define MUI_HEADERIMAGE_BITMAP "${INSTALLATIONNAME}.bmp"
+!define MUI_HEADERIMAGE_BITMAP "../icon/${INSTALLATIONNAME}.bmp"
 !define MUI_HEADERIMAGE_RIGHT
 
 Name "LibreOffice autoUpdate"
 !define INSTALLATIONNAME "LibreOffice_autoUpdate"
 ;!define DISPLAYEDNAME "LibreOffice autoUpdate"
 ;${DISPLAYEDNAME}
-OutFile "${INSTALLATIONNAME}-Installer.exe"
+OutFile "../bin/${INSTALLATIONNAME}-Installer.exe"
 InstallDir "$PROGRAMFILES\${INSTALLATIONNAME}"
 DirText "This will install ${INSTALLATIONNAME}."
 ComponentText "Please choose the components to install."
@@ -26,7 +26,7 @@ ComponentText "Please choose the components to install."
 Section "LibreOffice autoUpdate" SectionGeneral
 SectionIn RO
 SetOutPath "$INSTDIR"
-File "${INSTALLATIONNAME}.exe"
+File "../bin/${INSTALLATIONNAME}.exe"
 SectionEnd
 
 SectionGroup "Shortcuts"
