@@ -14,11 +14,11 @@ Download the installer from
 https://github.com/Georg-007/LibreOffice_autoUpdate/releases/download/v1.0/LibreOffice_autoUpdate-Installer.exe
 ```
 and run it. Follow the instructions there.
-You can also use the portable version stored in bin/LibreOffice_autoUpdate.exe.
+You can also use the portable version stored in [bin/LibreOffice_autoUpdate.exe](LibreOffice_autoUpdate.exe).
 
 ## Deployment
 
-The binary was built with pyinstaller and the auto-py-to-exe gui. The configuration ist stored in /comp.json (You will have to update the paths to match your files' locations.).
+The binary was built with pyinstaller and the auto-py-to-exe gui. The configuration ist stored in [comp.json](comp.json) (You will have to update the paths to match your files' locations.).
 Alternatively, you can run the python source directly, make sure to install dependencies with
 ```
 pip install -r requirements.txt
