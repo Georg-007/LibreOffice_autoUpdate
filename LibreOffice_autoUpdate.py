@@ -10,6 +10,12 @@ archs = ["x64", "x86"]
 arch = archs[0]
 fullArch = "x86_64" if arch == "x64" else "x86"
 
+#? currently installed version
+#? Win11 x64
+#? registry
+#? Computer\HKEY_CLASSES_ROOT\Installer\Products\5966D1008B9FDBC4AA29EFA885360806\ProductName
+#? 7.3.2.2 --> not matching website (7.3.3)
+
 sg.theme("Dark")
 layout = [  [sg.Text("LibreOffice autoUpdate", key = "-I-")],
             [sg.Text("latest version:"), sg.Text("loading...", key = "-V-")],
