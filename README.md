@@ -9,12 +9,8 @@ It is currently only available for Windows x64, support for Linux, macOS and x86
 
 ### Installing
 
-Download the installer from
-```
-https://github.com/Georg-007/LibreOffice_autoUpdate/releases/download/v1.0/LibreOffice_autoUpdate-Installer.exe
-```
-and run it. Follow the instructions there.
-You can also use the portable version stored in [bin/LibreOffice_autoUpdate.exe](LibreOffice_autoUpdate.exe).
+Download the installer from [here](https://github.com/Georg-007/LibreOffice_autoUpdate/releases/download/v1.0/LibreOffice_autoUpdate-Installer.exe) and run it. Follow the instructions there.
+You can also use the portable version stored in [LibreOffice_autoUpdate.exe](bin/LibreOffice_autoUpdate.exe).
 
 ## Deployment
 
