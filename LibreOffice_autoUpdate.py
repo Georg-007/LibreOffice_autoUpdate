@@ -6,6 +6,10 @@ from time import sleep
 import PySimpleGUI as sg
 from threading import Thread
 
+archs = ["x64", "x86"]
+arch = archs[0]
+fullArch = "x86_64" if arch == "x64" else "x86"
+
 sg.theme("Dark")
 layout = [  [sg.Text("LibreOffice autoUpdate", key = "-I-")],
             [sg.Text("latest version:"), sg.Text("loading...", key = "-V-")],
@@ -28,7 +32,8 @@ def get_versions():
     return versions
 
 def get_msi(version):
-    urlmsi = f"https://download.documentfoundation.org/libreoffice/stable/{version}/win/x86_64/LibreOffice_{version}_Win_x64.msi"
+    urlmsi = f"https://download.documentfoundation.org/libreoffice/stable/{version}/win/{fullArch}/LibreOffice_{version}_Win_{arch}.msi"
+    #urlmsi = f"https://download.documentfoundation.org/libreoffice/stable/{version}/win/x86_64/LibreOffice_{version}_Win_x64.msi"
     r = requests.get(urlmsi)
     filename = temp + "/" + urlmsi.split('/')[-1]
     with open(filename,'wb') as output_file:
