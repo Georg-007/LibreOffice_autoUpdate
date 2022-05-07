@@ -21,6 +21,8 @@ pip install -r requirements.txt
 ```
 in the repository.
 
+To build the installer, compile the [Installer/LibreOffice_autoUpdate.nsi](LibreOffice_autoUpdate.nsi) with [NSIS](https://nsis.sourceforge.io/Main_Page).
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
